@@ -3,20 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
     <title>Airport-code-generator</title>
 </head>
 <body>
-    <form action="">
-        <input type="text"/>
-        <input type="submit"/>
+    <div class ="container">
+        <header>
+            <h1>AI Airport code generator</h1>
+        </header>
+        <main>
+            <div class="form-wrapper">
+                <form action="">
+                    <input type="text"placeholder="Enter and airport code"
+                    autofocus="required"
+                    autocomplete="off"
+                    class="instructions"
+                    id="user-instructions"/>
+                    <input type="submit" class="submit-button"/>
 
 
-    </form>
+                </form>
+                <div class="hint">ie DUB,IAD or DLS</div>
+            </div>
+            <div class="airportName hidden" id="airportName">
 
-    <footer>This AI project was coded by <a href="https://github.com/rozie321">Roselyn Manegene</a>
-    and is <a href="https://github.com/rozie321/airport-code-generator">open-sourced on Github </a> 
-    and is hosted on <a href="https://airport-code-generator.netlify.app">netlify</a>
-    </footer>
+            </div>
+        </main>
+   
+
+        <footer>This AI project was coded by <a href="https://github.com/rozie321">Roselyn Manegene</a>
+        and is <a href="https://github.com/rozie321/airport-code-generator">open-sourced on Github </a> 
+        and is hosted on <a href="https://airport-code-generator.netlify.app">netlify</a>
+        </footer>
+    </div>
+
+    <script src="src/index.js"></script>
     
 </body>
 </html>
