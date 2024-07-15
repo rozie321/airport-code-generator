@@ -18,7 +18,7 @@ function displayairportName(event){
 
     let apiKey = "2046c535afeb092fo82f1d306d8a2b2t";
     let context =
-    "Your are a well informed AI Assistant that knows all the world airport codes and respective names.The airport name and respective city and country will be in HTML format.Example: <p> DUB code for Dublin airport </br><p>It in  Dublin City in the republic of Ireland/p>";
+    "Your are a well informed AI Assistant that knows all the world's airport codes and respective names.The airport name,respective city and country will be in HTML format.Example: <p> DUB code for Dublin airport </br> Its in Dublin City in the republic of Ireland/p>";
     let prompt = `Generate the respective city and country the airport code ${instructionsInput.value} belongs`;
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
@@ -30,4 +30,4 @@ function displayairportName(event){
 
 }
 let airportNamegeneratorElement = document.querySelector('#airportname-generator');
-poemgeneratorElement.addEventListener("submit",displayairportName);
+airportNamegeneratorElement.addEventListener("submit",displayairportName);
